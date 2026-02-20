@@ -1,0 +1,9 @@
+{ 
+"name": "cplusplus-task-manager",
+"version": "0.1.0",
+"description": "REST API backend for task manager",
+"dependencies": [
+  "crow",
+  "nlohmann-json"
+ ]
+}
