@@ -1,1 +1,4 @@
 build/
+.cursor/
+tasks.db
+test_tasks.db

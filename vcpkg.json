@@ -4,6 +4,8 @@
 "description": "REST API backend for task manager",
 "dependencies": [
   "crow",
-  "nlohmann-json"
+  "nlohmann-json",
+  "sqlite3",
+  "openssl"
  ]
 }
