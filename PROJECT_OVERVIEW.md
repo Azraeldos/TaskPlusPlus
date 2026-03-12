@@ -1,4 +1,4 @@
-# C++ Task Management Backend — Project Overview
+# TaskPlusPlus — Project Overview
 
 A short, human-friendly guide to what this project is, how it’s built, and how the pieces fit together.
 

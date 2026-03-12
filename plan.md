@@ -1,4 +1,4 @@
-# CplusplusTaskManager — Future Plan
+# TaskPlusPlus — Future Plan
 
 A roadmap of improvements, enhancements, and technical debt to address.
 

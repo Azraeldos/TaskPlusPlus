@@ -1,4 +1,4 @@
-# CplusplusTaskManager
+# TaskPlusPlus
 
 A C++20 REST API backend for a multi-user task management application. Built with a layered architecture, JWT authentication, and SQLite persistence.
 
@@ -58,7 +58,7 @@ cd ..
 **Windows (PowerShell):**
 
 ```powershell
-cd CplusplusTaskManager
+cd TaskPlusPlus
 cmake -B build
 cmake --build build
 ```
@@ -66,7 +66,7 @@ cmake --build build
 **Linux / macOS (bash):**
 
 ```bash
-cd CplusplusTaskManager
+cd TaskPlusPlus
 cmake -B build
 cmake --build build
 ```
@@ -76,16 +76,16 @@ cmake --build build
 **Windows (PowerShell):**
 
 ```powershell
-.\build\Debug\CplusplusTaskManager.exe   # Debug
-.\build\Release\CplusplusTaskManager.exe # Release
+.\build\Debug\TaskPlusPlus.exe   # Debug
+.\build\Release\TaskPlusPlus.exe # Release
 ```
 
 **Linux / macOS (bash):**
 
 ```bash
-./build/Debug/CplusplusTaskManager   # Debug (multi-config)
-./build/Release/CplusplusTaskManager # Release (multi-config)
-# or, for single-config: ./build/CplusplusTaskManager
+./build/Debug/TaskPlusPlus   # Debug (multi-config)
+./build/Release/TaskPlusPlus # Release (multi-config)
+# or, for single-config: ./build/TaskPlusPlus
 ```
 
 The server listens at **http://localhost:18080**.

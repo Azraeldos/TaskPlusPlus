@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-# If vcpkg is in the repo folder (e.g. CplusplusTaskManager/vcpkg), use it when no toolchain was given
+# If vcpkg is in the repo folder (e.g. TaskPlusPlus/vcpkg), use it when no toolchain was given
 if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
   set(_vcpkg_toolchain "${CMAKE_CURRENT_SOURCE_DIR}/../vcpkg/scripts/buildsystems/vcpkg.cmake")
   if(EXISTS "${_vcpkg_toolchain}")
@@ -9,7 +9,7 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
   unset(_vcpkg_toolchain)
 endif()
 
-project(CplusplusTaskManager)
+project(TaskPlusPlus)
 set(CMAKE_CXX_STANDARD 20)
 
 if(WIN32)
@@ -50,14 +50,14 @@ set(APP_SOURCES
   src/services/AuthService.cpp
   src/services/TaskService.cpp
 )
-add_executable(CplusplusTaskManager ${APP_SOURCES})
+add_executable(TaskPlusPlus ${APP_SOURCES})
 
-target_include_directories(CplusplusTaskManager PRIVATE
+target_include_directories(TaskPlusPlus PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/src
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-target_link_libraries(CplusplusTaskManager PRIVATE
+target_link_libraries(TaskPlusPlus PRIVATE
   Crow::Crow
   nlohmann_json::nlohmann_json
   SQLiteCpp

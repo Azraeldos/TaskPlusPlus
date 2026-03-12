@@ -1,4 +1,4 @@
-# CplusplusTaskManager — Build Guide
+# TaskPlusPlus — Build Guide
 
 A C++20 REST API backend for a task management application. Built with Crow (web framework), SQLite, JWT authentication, and a layered architecture (controllers, services, repositories).
 
@@ -18,19 +18,19 @@ A C++20 REST API backend for a task management application. Built with Crow (web
 
 ```bash
 # 1. Clone vcpkg as a sibling of this project (one-time setup)
-cd <parent-of-CplusplusTaskManager>   # e.g. ~/Documents/repos
+cd <parent-of-TaskPlusPlus>   # e.g. ~/Documents/repos
 git clone https://github.com/microsoft/vcpkg.git vcpkg
 cd vcpkg && ./bootstrap-vcpkg.sh && cd ..   # Unix
 # or: .\bootstrap-vcpkg.bat                  # Windows (cmd/PowerShell)
 
 # 2. Build
-cd CplusplusTaskManager
+cd TaskPlusPlus
 cmake -B build
 cmake --build build
 
 # 3. Run
-./build/Debug/CplusplusTaskManager.exe   # Windows (Debug)
-./build/Release/CplusplusTaskManager.exe # Windows (Release)
+./build/Debug/TaskPlusPlus.exe   # Windows (Debug)
+./build/Release/TaskPlusPlus.exe # Windows (Release)
 ```
 
 The server listens at **http://localhost:18080**.
@@ -48,7 +48,7 @@ This project uses **vcpkg manifest mode**. Dependencies (Crow, nlohmann-json, Op
 ```
 <workspace>/
 ├── vcpkg/
-└── CplusplusTaskManager/
+└── TaskPlusPlus/
 ```
 
 CMake auto-detects the toolchain at `../vcpkg/scripts/buildsystems/vcpkg.cmake` and no extra flags are needed.
